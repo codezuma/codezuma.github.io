@@ -223,6 +223,7 @@ aside{
     animation-fill-mode: forwards;
 }
 
+/* animation for side_box */
 @keyframes show_menu {
     from{
         width: 50px;
