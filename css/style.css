@@ -387,8 +387,12 @@ border-radius: 15px;
        display: none;
    }
    .offers_section{
+       padding: 10%;
        flex-direction: column;
        height: auto;
+   }
+   .offer_section_left h1{
+       font-size: 2rem;
    }
    .offer_section_left{
        width: 100%;
@@ -400,7 +404,9 @@ border-radius: 15px;
        width: 100%;
    }
    .offer_box1,.offer_box2{
+       margin: 0;
        width: 100%;
+       justify-content: center;
    }
    .offer_item{
        width: 60%;
@@ -416,7 +422,13 @@ border-radius: 15px;
         display: none;
     }
       .offer_item{
-        width: 80%;
+        width: 100%;
+    }
+    .offer_section_left button{
+        font-size: 1.3rem;
+        padding: 3% 8%;
+        height: auto;
+        width: auto;
     }
  
   }
