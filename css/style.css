@@ -28,7 +28,7 @@ html{
     font-family: biotif;
 }
 :root{
-
+    --secondary_bg : #181818;
     --primary_bg:#111111;
     --primary_color:#F13A60;
     --primary_color_bg:#f13a5fda;
@@ -47,8 +47,9 @@ header{
     height: 80px;
     justify-content: space-between;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     padding: 0 5%;
+    transition: .5s;
 }
 .logo{
     color: whitesmoke;
@@ -61,6 +62,21 @@ header{
 }
 body{
    background-color: var(--primary_bg);
+   overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    appearance: none;
+    width: 10px;
+    height: 100px;
+}
+body::-webkit-scrollbar-button{
+    appearance: none;
+    background: #000;
+}
+body::-webkit-scrollbar-thumb{
+    appearance: none;
+    opacity: .8;
+    background-color: var(--primary_color);
 }
 a{
     text-decoration: none;
@@ -105,18 +121,21 @@ section div{
     align-items: flex-start;
 }
 .developer_details_head{
-    font-family: bogart trial;
+    font-family: bogart;
     font-size: 3.5rem;
     background: linear-gradient(271deg ,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
         font-weight: 800;
-        -webkit-text-stroke: rgba(245, 245, 245, 0.336);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkittext-fill-color: transparent;
+        background-clip: text;
 }
 .explore_work_button{
     margin-top: 15vh;
     padding: 1% 1%;
     width: 200px;
+    position: relative;
+    z-index: 2;
     font-size: 1.5rem;
     color: whitesmoke;
     background-color: transparent;
@@ -127,7 +146,14 @@ section div{
 }
 .explore_work_button:hover{
     background-color: whitesmoke;
-    color: var(--primary_bg)        ;
+    color: var(--primary_bg);
+}
+.button_anim_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--primary_color);
 }
 .button_play{
     width: 20px;
@@ -264,11 +290,14 @@ aside{
   font-size: 1.5rem;
   width: 100%;
   margin-top: 3rem;
-  text-align: ;
+  text-align:right ;
 
 }
-
-
+/*  offer section code starts here */
+.offers_section{
+    width: 100%;
+    height: 500px;
+}
 
 /*   responsive code starts */
 /* On screens that are 992px or less, set the background color to blue */
@@ -295,5 +324,8 @@ aside{
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
+    .particle_js_bg{
+        display: none;
+    }
  
   }
