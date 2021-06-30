@@ -292,7 +292,7 @@ aside{
 /*  offer section code starts here */
 .offers_section_wrap{
     width: 100%;
-    padding: 1% 5%;
+    padding:20% 5%;
     justify-content: center;
 }
 .offers_section{
@@ -364,8 +364,67 @@ border-radius: 15px;
 }
 .offer_item li{
     color: whitesmoke;
+    font-weight: 500;
     font-size: 1.3rem;
 }
+
+/* previous wroks section code here */
+.previous_work_section_wrap{
+    width: 100%;
+    padding: 5% 5%;
+    flex-direction: column;
+}
+.previous_work_section_wrap h1{
+    color: white;
+    font-size: 2.5rem;
+    width: 100%;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.previous_work_item{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: start;
+    justify-content: space-between;
+}
+
+.previous_work_item_info_box{
+    width: 40%;
+    align-self: flex-start;
+}
+.previous_work_item_header{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+}
+.previous_work_item_description{
+    color: rgb(197, 193, 193);
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    word-spacing: .5rem;
+}
+.previous_work_item_image_wrap{
+    padding: 1%;
+    background-color: var(--secondary_bg);
+    width: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+/* .previous_work_item_image_wrap:hover .previous_work_item_image{
+   width: 110%;
+ } */
+.previous_work_item_image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 
 /*   responsive code starts */
 /* On screens that are 992px or less, set the background color to blue */
@@ -411,10 +470,29 @@ border-radius: 15px;
    .offer_item{
        width: 60%;
    }
-
-
-
+.previous_work_item{
+    flex-direction: column;
+    padding: 5% 5%;
+    background-color: var(--secondary_bg);
+    border-radius: 10px;
   }
+  .previous_work_item_info_box{
+      width: 100%;
+  }
+  .previous_work_item_image_wrap{
+      width: 100%;
+      margin-top: 50px;
+  }
+  .previous_work_section_wrap h1{
+      font-size: 2rem;
+  }
+  .previous_work_item_header{
+      font-size: 1.7rem;
+  }
+  .previous_work_item_description{
+      word-spacing: .3rem;
+  }
+}
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
@@ -426,7 +504,7 @@ border-radius: 15px;
     }
     .offer_section_left button{
         font-size: 1.3rem;
-        padding: 3% 8%;
+        padding: 3% 5%;
         height: auto;
         width: auto;
     }

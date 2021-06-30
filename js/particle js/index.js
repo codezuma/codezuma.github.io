@@ -17,7 +17,7 @@ window.onscroll = function (e) {
              header.style.boxShadow = ' 0px 8px 18px -6px rgba(82, 82, 83, 0.12), 0px 12px 42px -4px rgba(59, 60, 61, 0.12)';
             }
         else{
-            header.style.background = "inherit";
+            header.style.background = "transparent";
             header.style.boxShadow = ' none';
 
         }
