@@ -672,7 +672,28 @@ footer {
 .footer_about_me address{
     letter-spacing: 1px;
 }
+.footer_social_links{
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgb(197, 193, 193);
+}
+.footer_social_links a{
+    color:rgb(197, 193, 193);
+    transition: .3s;
+    margin-top: 20px;
+}
+.footer_social_links li{
+    margin-top: 20px;
+    margin-left: 100px;
+}
 
+.footer_social_links a:hover{
+    color:rgb(255, 255, 255);
+}
 
 /*   responsive code starts */
 /* On screens that are 992px or less, set the background color to blue */
@@ -761,7 +782,25 @@ footer {
     .footer_head{
         font-size: 2.8rem;
     }
+    .footer_info_box{
+        flex-direction: column;
+    }
+    .footer_about_me{
+        width: 100%;
+                                    align-items: center;  
+  }
+    .footer_social_links{
+        width: 100%;
+        margin-top: 50px;
+        align-items: center ;
+    }
+    .footer_social_links li{
+        margin-left: 0;
+        text-align: left;
+
+    }
 }
+
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
